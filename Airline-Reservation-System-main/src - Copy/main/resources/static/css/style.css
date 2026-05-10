@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+/* NAVBAR ANIMATION */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: white;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* SEARCH CARD */
+.search-card {
+    background: rgba(255,255,255,0.1);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    text-align: center;
+    animation: fadeIn 1.2s ease-in-out;
+    transition: 0.3s;
+}
+
+.search-card:hover {
+    transform: scale(1.03);
+}
+/* CENTER CONTAINER */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+/* FORM CARD */
+.form-card {
+    width: 350px;
+    padding: 35px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    animation: fadeIn 1s ease;
+}
+
+/* INPUT */
+.form-card input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+/* BUTTON */
+.form-card button {
+    width: 100%;
+    padding: 12px;
+    background: #ff5a5f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-card button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 90, 95, 0.5);
+}
+
+/* TEXT */
+.link-text {
+    margin-top: 10px;
+}
+
+.link-text a {
+    color: #fff;
+    text-decoration: underline;
+}
+/* TOP ACTION BUTTONS */
+.top-actions {
+    display: flex;
+    gap: 10px;
+    padding: 15px 40px;
+}
+
+/* BUTTON STYLE */
+.top-actions button {
+    background: rgba(255,255,255,0.2);
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.top-actions button:hover {
+    background: #ff5a5f;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 90, 95, 0.5);
+}
+
+/* SEARCH */
+.search-box {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.search-box input {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    width: 200px;
+}
+
+.search-box button {
+    background: #ff5a5f;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 90, 95, 0.5);
+}
+
+/* LOADER */
+.loader {
+    display: none;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #ff5a5f;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 20px auto;
+    animation: spin 1s linear infinite;
+}
+
+/* RESULTS */
+.results {
+    padding: 30px;
+}
+
+/* FLIGHT CARD */
+.flight-card {
+    background: white;
+    color: black;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    animation: fadeIn 0.6s ease-in-out;
+    transition: 0.3s;
+}
+
+.flight-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.route {
+    color: gray;
+}
+
+.time {
+    font-size: 12px;
+    color: #777;
+}
+
+.price {
+    color: #ff5a5f;
+}
+
+.flight-right button {
+    background: #ff5a5f;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.flight-right button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(255, 90, 95, 0.6);
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}

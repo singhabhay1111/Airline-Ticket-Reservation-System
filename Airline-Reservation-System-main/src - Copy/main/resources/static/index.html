@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>RawTravel</title>
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">✈ RawTravel</div>
+    <div class="nav-links">
+        <a href="login.html">Login</a>
+        <a href="history.html">My Bookings</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+
+    <div class="search-card">
+        <h1>Search Flights</h1>
+
+        <div class="search-box">
+            <input id="source" placeholder="From (DEL)">
+            <input id="destination" placeholder="To (MUM)">
+            <button onclick="searchFlights()">Search</button>
+        </div>
+
+        <!-- LOADER -->
+        <div id="loader" class="loader"></div>
+
+    </div>
+
+</div>
+
+<!-- RESULTS -->
+<div id="results" class="results"></div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
